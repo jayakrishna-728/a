@@ -1,0 +1,53 @@
+.container{
+    background: rgb(255, 233, 178);
+    color: black;
+    font-size: 14px;
+    padding: 15px;
+
+    button{
+        padding: 4px 15px;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 12px;
+        outline: none;
+        border: none;
+        color: white;
+        height: 40px;
+    }
+    .approve{
+        background: green;
+        cursor: pointer;
+    }
+    .reject{
+        background: red;
+        cursor: pointer;
+    }
+    .decide{
+        display: flex;
+        justify-content: space-between;
+        div{
+            padding: 20px 10px;
+            font-size: 18px;
+            font-weight: 700;
+
+        }
+    }
+    .submit{
+        margin-top: 10px;
+        justify-content: center;
+        display: flex;
+        button{
+            background: orange;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    .cibil{
+        padding: 20px 0px;
+        font-size: 19px;
+        letter-spacing: 3px;
+    }
+}

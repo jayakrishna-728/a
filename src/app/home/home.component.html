@@ -1,0 +1,20 @@
+<div class="container">
+    <h1>Ng-Rx</h1>
+    <div>This is the basic example of ngRx store where when user clicks on approve or reject the status we are storing in the ngrx store</div>
+
+    <div class="cibil">Cibil score for the user <b>Jaya krishna</b> is 840 </div>
+
+    <div class="decide">
+        <button class="approve" (click)="approveApplication()">Approve the loan</button>
+
+        <div>Status : <span>{{status | async}} </span></div> 
+
+        <!-- using async pipe for observable  -->
+    
+        <button class="reject" (click)="rejectApplication()">Reject the loan</button>
+    </div>
+    <div class="submit" (click)="onSubmit()"><button>Submit</button></div>
+
+
+</div>
+
