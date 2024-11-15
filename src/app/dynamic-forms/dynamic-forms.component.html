@@ -1,0 +1,14 @@
+<h1>Dynamic Forms</h1>
+<form [formGroup]="this.dynamicForm" (ngSubmit)="onSubmit()">
+    <div formArrayName="fields">
+      <div *ngFor="let field of fields.controls; let i = index" [formGroupName]="i">
+        <input formControlName="value" placeholder="Enter value" />
+        <button type="button" (click)="removeField(i)">Remove</button>
+      </div>
+    </div>
+    <button type="button" (click)="addField()">Add Field</button>
+    <button type="submit" [disabled]="dynamicForm.invalid">Submit</button>
+  </form>
+  <pre>{{ dynamicForm.value | json }}</pre>
+
+  
